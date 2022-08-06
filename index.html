@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title>Portfolio Website</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <img src="images/close.png" class="small" onclick="closemenu()">
+                    </ul>
+                    <img src="images/openlist.png" class="small" onclick="openmenu()">
+                </nav>
+            </div>
+        </div>
+        <!-- ---------------ABOUT--------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Through years of practicing professionally as an architect, I have
+                            comprehensive experience as technical and design architect.<br>
+                            Working with concept development and competitions both
+                            nationally and internationally have given me great knowledge
+                            to work in a team closely together to create the best design possible.<br>
+                            I understand the nature and difficulty of a task, and can manage
+                            time  when deadlines are approaching.
+                            But my unique advantage is the attention to the details and
+                            the ability to make graphic presentation of the project.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Revit</span><br>Architectural Design</li>
+                                    <li><span>ArchiCAD</span><br>Architectural Design</li>
+                                    <li><span>AutoCAD</span><br>Architectural Design</li>
+                                    <li><span>Photoshop</span><br>Graphic Design</li>
+                                    <li><span>Illustrator</span><br>Graphic Design</li>
+                                    <li><span>After Effects</span><br>Motion Design</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2003.04 - 2006.08</span><br>ZELEMIN' architectural office</li>
+                                    <li><span>2006.10 - 2019.06 </span><br>Comfortbud Design Institute</li>
+                                    <li><span>2019.07 - 2020.04 </span><br>Building Alliance - 2000/Greenville Group of Companies/</li>
+                                    <li><span>2020.05 - 2021.02 </span><br>A3 GROUP architectural office</li>
+                                    <li><span>2021.03 - 2022.04 </span><br>Comfortbud Design Institute</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>1996.09 - 2002.12</span><br>Lviv Polytechnic National University</li>
+                                    <li><span>qualification</span><br>Master of Architecture</li>
+                                    <li><span>specialty</span><br>Architecture of Buildings and Structures</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------SERVICES--------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Architectural Design</h2>
+                        <p>
+                        ▪ landscape, urban, public and  residential design concepts;<br>
+                        ▪ modeling and visualization of architectural projects;<br>
+                        ▪ house plans with visualization of the interior;<br>
+                        ▪ reconstruction and redevelopment of buildings;<br>
+                        ▪ design project documentation
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Graphic Design</h2>
+                        <p>
+                        ▪ logo design and corporate identity;<br>
+                        ▪ creating icons, packaging, web graphics;<br>
+                        ▪ creating designs for posters and print ads;<br>
+                        ▪ retouching and composing product photography;<br>
+                        ▪ graphic design of contest works;
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Motion Design</h2>
+                        <p>
+                        ▪ logo animation;<br>
+                        ▪ animation of graphics and text;<br>
+                        ▪ add animated effects to images;<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------PORTFOLIO--------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/archwork.jpg">
+                        <div class="layer">
+                            <h3>Architectural Projects</h3>
+                            <p>
+                            Get inspired by your own architecture-<br>
+                            amazing things will follow...</p>
+                            <a href="archwork.html" target="_blank">look at</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/graphicwork.jpg">
+                        <div class="layer">
+                            <h3>Graphic Projects</h3>
+                            <p>
+                                Design your own logo with an artistic style...</p>
+                                <a href="graphicwork.html" target="_blank">look at</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/motionwork.jpg">
+                        <div class="layer">
+                            <h3>Motion Projects</h3>
+                            <p>
+                                Imagin your own image that moves...</p>
+                            <a href="motionwork.html" target="_blank">look at</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.behance.net/badankru9b66" target="_blank" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- ---------------CONTACT--------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h class="sub-title">Contact Me</h>
+                        <p>badankru@gmail.com</p>
+                        <p>+38067-58-26-101</p>
+                        <a href="my-cv.html" target="_blank" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="https://formsubmit.co/badankru@gmail.com" method="POST">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Krutsko</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-130px";
+            }
+
+        </script>
+
+    </body>
+</html>
